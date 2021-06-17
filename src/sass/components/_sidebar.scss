@@ -1,0 +1,53 @@
+.sidebar {
+    width: 20vw;
+    padding: 20vh 0;
+
+    @include respond(tablet) {
+        width: 16vw;
+        padding: 20vh 1vh;
+        // padding: 0 3vw;
+    }
+
+    @include respond(phone) {
+        width: 17vw;
+        margin: 0 auto;
+        // justify-content: center;
+        padding: 20vh 2vh;
+        // width: 90vw;
+        // padding: 0 1vw;
+    }
+
+    margin: 0 0;
+    background-color: transparent;
+    z-index: 120;
+
+    &-item {
+        // margin:0 auto;
+        color: rgba($colorSecondary, 0.8);
+        border-radius: 100%;
+        background-color: rgba($colorTertiary, .1);
+
+        @include respond(tablet) {
+            box-shadow: 0 0 10px rgba($colorTertiary, .7);
+        }
+
+        box-shadow: 0 0 100px rgba($colorTertiary, .7);
+        font-size: 4rem !important;
+        padding: 1rem;
+        transition: all .3s linear;
+        cursor: pointer;
+        animation: animation3 1s;
+
+        &:hover {
+            background-color: rgba($color8Content, .05);
+            font-size: 4.8rem !important;
+        }
+
+        // -webkit-background-clip: text;
+    }
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}

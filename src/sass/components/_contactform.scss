@@ -1,0 +1,240 @@
+.contact {
+    &-notification {
+        padding: 2rem !important;
+        color: $colorSecondary !important;
+        font-size: 2rem;
+
+        &-success {
+            background-color: rgba(#35B3A0, 0.7) !important;
+        }
+
+        &-error {
+            background-color: rgba($colorQuadrinary, 0.8) !important;
+        }
+
+    }
+
+    background-color: rgba($colorTertiary, .95);
+    background-image: linear-gradient(90deg, rgba(21, 19, 17, 0.9) 0%, rgba(21, 19, 17, 0.4) 50%),
+    url("https://images.unsplash.com/photo-1559511260-66a654ae982a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2400&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    overflow: hidden;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+
+    &-form {
+
+
+        &-form {
+
+            &-button {
+                text-decoration: none;
+                transition: all 0.3s;
+                cursor: pointer;
+
+                &:hover {
+
+                    transform: scale(.9)
+                }
+
+                border-radius: 3px;
+                margin:2rem 3.5rem;
+                // align-self: flex-end;
+                text-align: center;
+                border: none;
+                background-color: rgba($color5, 0.3);
+                color: $colorSecondary;
+                padding: 1rem;
+                font-size: 1.7rem !important;
+            }
+
+            display: block;
+            height: 35rem;
+
+            @include respond(tablet) {
+                width: 100%;
+                height: auto
+            }
+
+            // width: 50%;
+
+            overflow: auto;
+            width: 100%;
+        }
+
+        &-input {
+            @include respond(tablet) {
+                width: 85%;
+                // padding:2%;
+                float: none;
+            }
+
+            position: relative;
+            height: 6rem;
+            width: 40%;
+            float: left;
+
+            &-label {
+                transition: all 0.3s;
+                position: absolute;
+                top: 2.5rem;
+                left: 2rem;
+                font-size: 1.5rem;
+                transform: translateY(-50%);
+                color: rgba($color6, 0.9);
+            }
+
+            &-input:not(:placeholder-shown)~&-label {
+                top: -1.5rem;
+                left: 1rem;
+                color: rgba($colorSecondary, 0.4);
+            }
+
+            &-input:focus~&-label {
+                top: -1.5rem;
+                left: 1rem;
+                color: $colorSecondary;
+            }
+
+
+            &-input {
+                &:not(:placeholder-shown) {
+                    background-color: rgba($colorQuadrinary, .7);
+                }
+
+                &:focus {
+                    border-bottom: 1px solid $color5;
+                    background-color: rgba($colorQuadrinary, .9);
+                }
+
+                &::-webkit-scrollbar {
+                    width: 5px;
+
+                    &-thumb {
+                        cursor: pointer;
+                        background-color: rgba($color5, .7);
+                    }
+                }
+
+                color:$colorSecondary;
+                font-size: 2rem;
+                background-color: rgba($colorSecondary, .7);
+                resize: none;
+                transition: all 0.5s;
+                outline: none;
+                border: none;
+                border-radius: .5rem;
+                text-align: left;
+                height: 3rem;
+                width: 90%;
+                padding: 1rem;
+            }
+
+            margin: 2rem 5%;
+
+        }
+
+        animation: animation2 1s;
+        width: 80%;
+        padding: 10%;
+
+        @include respond(tablet) {
+            width: 100%;
+            padding: 3rem;
+        }
+
+        @include respond(phone) {
+            padding: 1rem;
+        }
+
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+
+        &-header {
+            padding: 2rem 1rem;
+            margin: 1rem auto 5rem;
+            color: $colorSecondary;
+            font-size: 2rem;
+        }
+
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    &-header {
+        animation: animation2 1s;
+        color: $colorSecondary;
+        font-size: 4rem;
+        margin: 30vh 0 5vh 0;
+    }
+
+    &-description {
+        border-radius: 1rem;
+        padding: 5rem;
+        background-color: rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+        color: $colorSecondary;
+        animation: animation1 1s;
+        margin-bottom: 10rem;
+        width: 50%;
+        width: 50rem;
+
+        @include respond(tablet) {
+            padding:2rem;
+            width: 90%;
+            flex-direction: column;
+        }
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: 2.3rem;
+
+        &-button {
+            @include respond(tablet) {
+             margin-top: 2rem;
+            }
+            text-decoration: none;
+            transition: all 0.3s;
+            cursor: pointer;
+
+            &:hover {
+
+                transform: scale(.9)
+            }
+
+            border: none;
+            background-color: rgba($colorQuadrinary, 0.7);
+            color: $colorSecondary;
+            padding: 1rem;
+            font-size: 1.7rem !important;
+        }
+    }
+
+    &-container {
+
+        &::-webkit-scrollbar {
+            width: 5px;
+
+            &-thumb {
+                cursor: pointer;
+                background-color: rgba($color5, .7);
+            }
+        }
+
+        scroll-behavior: smooth;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        height: 70vh;
+        width: 75vw;
+
+        padding: 0 0 30vh 0;
+        margin: 0vh 0 0 0;
+        padding-left: 10%;
+    }
+}

@@ -1,0 +1,43 @@
+.padding {
+    &-botton {
+        &-small {
+            padding-bottom: 2rem;
+        }
+
+        &-medium {
+            padding-bottom: 4rem;
+        }
+
+        &-large {
+            padding-bottom: 6rem;
+        }
+    }
+
+    &-top {
+        &-small {
+            padding-top: 2rem;
+        }
+
+        &-medium {
+            padding-top: 4rem;
+        }
+
+        &-large {
+            padding-top: 6rem;
+        }
+    }
+
+    &-general {
+        &-small {
+            padding: 2rem;
+        }
+
+        &-medium {
+            padding: 4rem;
+        }
+
+        &-large {
+            padding: 6rem;
+        }
+    }
+}

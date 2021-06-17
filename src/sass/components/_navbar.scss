@@ -1,0 +1,105 @@
+.navbar {
+    position: fixed;
+    display: flex;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    background-color: inherit;
+    z-index: 100;
+    padding: 3rem 2rem;
+    justify-content: space-between;
+    width: 100vw;
+    align-items: flex-end;
+    flex-direction: row;
+    animation: animation5 1s;
+
+    &-logo {
+        @include respond(phone) {
+            opacity: 0;
+            // margin-top:-3rem;
+            font-size: 2.6rem;
+        }
+
+        width: 62vw;
+        font-size: 3rem;
+        color: $colorSecondary;
+    }
+
+    &-list {
+
+        &-item {
+            text-align: center;
+            font-size: 2rem;
+            color: rgba($colorSecondary, 0.7);
+            width: auto;
+            margin: 1rem 2rem;
+            transition: all 0.2s !important;
+            border-radius: .6rem;
+            cursor: pointer;
+
+            @include respond(tablet) {
+                margin: 1rem 1rem;
+            }
+
+            &:hover {
+                @include respond(tablet) {
+                    margin: 0rem 1rem;
+                }
+
+                color: $colorTertiary;
+                margin: 0rem 2rem;
+                padding: 1rem 1rem;
+                background-image: radial-gradient($colorSecondary, $colorSecondary);
+            }
+        }
+
+        &-hidden {
+            display: none;
+        }
+
+        &-current {
+            text-align: center;
+            font-size: 2rem;
+            color: $colorSecondary;
+            width: auto;
+            width: 0 auto;
+
+            @include respond(tablet) {
+                margin: 0 1rem;
+            }
+
+            margin: 0rem 2rem;
+
+            transition: all 0.2s !important;
+            border-radius: .6rem;
+            cursor: pointer;
+
+            border-radius: .6rem;
+            background-image: radial-gradient($colorQuadrinary, $colorQuadrinary);
+            cursor: pointer;
+            padding: 1rem 1rem;
+
+            &:hover {
+                @include respond(tablet) {
+                    margin: 0rem 1rem;
+                }
+
+                color: $colorTertiary;
+                margin: 0 1rem;
+                padding: 1.1rem 1.1rem;
+                background-image: radial-gradient($colorSecondary, $colorSecondary);
+            }
+        }
+
+        justify-content:space-between;
+        // width: 30vw;
+        margin-right: 5rem;
+
+        @include respond(phone) {
+            margin-right: 3rem;
+        }
+
+        display: flex;
+        flex-direction: row;
+    }
+}

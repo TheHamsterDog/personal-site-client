@@ -1,0 +1,212 @@
+.home {
+    overflow: hidden;
+    background-color: $colorPrimary;
+    padding: 0rem 0rem 0 0rem;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+
+    &-content {
+        &-end {
+
+            @include respond(tablet) {
+                // padding: 3rem;
+                // margin-bottom: 12rem;
+            }
+
+            @include respond(phone) {
+                // margin-bottom: 18rem;
+                padding: 2rem;
+            }
+
+            padding: 5rem;
+            margin-bottom: 5rem;
+            background-color: rgba(#339D8D, 0.7);
+            border-radius: 2rem;
+
+            &-message {
+                font-size: 2.4rem;
+                color: $colorSecondary;
+            }
+
+            &-buttons {
+
+                display: flex;
+                justify-content: space-between;
+
+                &-button {
+                    cursor: pointer;
+                    color: $colorSecondary;
+                    transition: all 0.5s;
+
+                    &:hover {
+
+                        transform: scale(0.87)
+                    }
+
+                    padding: 2rem;
+                    background-color: rgba($colorQuadrinary, 0.7);
+                    outline:none;
+                    border-radius: 2rem;
+                    // border:.5px solid rgba($colorSecondary, 0.7);
+                }
+            }
+        }
+
+        &-portfolio {
+            margin: 5rem 0rem;
+            overflow: hidden;
+            // padding: 2.5rem;
+
+            &-title {
+                text-decoration: underline;
+                color: rgba($colorQuadrinary, 0.6);
+                font-size: 4rem;
+            }
+
+
+        }
+
+        &-story {
+            &-container {
+                @include respond(tablet) {
+                    padding: 1rem;
+                }
+
+                @include respond(phone) {
+                    padding: 1rem;
+                    box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+                }
+
+                overflow: hidden;
+                border-radius: 1rem;
+                padding: 2.5rem;
+                box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+
+                &-header {
+                    color: rgba($colorSecondary, 0.6);
+                    font-size: 2.6rem;
+                }
+
+                margin: 5rem auto;
+            }
+
+            @include respond(tablet) {
+                margin: 5rem 1rem;
+            }
+
+            @include respond(phone) {
+                margin: 5rem 1rem 5rem .5;
+            }
+
+            margin: 5rem 2.5rem;
+
+            &-title {
+                @include respond(tablet) {
+                    margin-bottom: 6rem;
+                }
+
+                margin-bottom: 20rem;
+                color: rgba($colorTertiary, 0.7);
+                font-size: 4rem;
+            }
+        }
+
+        &-container {
+            scroll-behavior: smooth;
+            margin: 0 auto;
+
+            &::-webkit-scrollbar {
+                z-index: 200;
+                width: 8px;
+                transition: all 0.5s;
+
+                &:hover {
+                    transition: all 0.5s;
+                    background-color: rgba($color5, .71);
+                }
+
+                color: rgba($colorPrimary, 0.1);
+
+                &-thumb {
+                    z-index: 200;
+                    width: 5px;
+                    background-color: $color6;
+                }
+            }
+
+            width: 65vw;
+            height: 100vh;
+
+            @include respond(tablet) {
+                width: 80vw;
+                padding: 0 1vw;
+            }
+
+            @include respond(phone) {
+                width: 80vw;
+                padding: 0 1vw;
+            }
+
+            padding: 0 5vw;
+            overflow: hidden;
+            overflow-y: scroll;
+            // border-left: 1px solid rgba($colorTertiary, 0.2);
+        }
+
+        height: 100vh;
+        padding:0 0rem;
+
+        @include respond(tablet) {
+            width: 90vw;
+            padding: 0 3vw;
+        }
+
+        @include respond(phone) {
+            width: 90vw;
+            padding: 0 1vw;
+        }
+
+        width: 75vw;
+
+        &-header {
+            margin: 20vh 0;
+
+            overflow-x: visible;
+
+            // margin-bottom: 10rem;
+            &-img {
+                &:hover {
+                    transform: scale(1.1);
+                }
+
+                transition: all 0.5s;
+                animation: animation4 1s;
+                box-shadow: 10px 10px 15px rgba(181, 192, 202, 0.6);
+                border-radius: 100%;
+                width: 25rem;
+            }
+
+
+
+            &-title {
+                animation: animation1 1s;
+                margin: 2rem 0;
+                color: $colorSecondary;
+                font-size: 4.3rem;
+            }
+
+            &-description {
+                animation: animation2 1s;
+                font-size: 2.3rem;
+                color: rgba($colorSecondary, 0.5);
+            }
+        }
+
+        overflow-x: hidden;
+
+    }
+
+    justify-content: space-between;
+}

@@ -1,0 +1,30 @@
+.paragraph {
+    background-image: linear-gradient(to right, $colorSecondary, rgba($colorSecondary, 0.8), $colorSecondary);
+    color: transparent;
+    -webkit-background-clip: text;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+    letter-spacing: .2rem;
+    word-spacing: .4rem;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(200%);
+
+    &-current {
+        @include respond(phone) {
+            animation: animation6 .2s;
+        }
+
+        animation: animation6 1s;
+        background-image: linear-gradient(to right, $colorSecondary, rgba($colorSecondary, 0.8), $colorSecondary);
+        color: transparent;
+        -webkit-background-clip: text;
+        font-size: 1.8rem;
+        line-height: 2rem;
+        margin-bottom: 2rem;
+        letter-spacing: .2rem;
+        word-spacing: .4rem;
+        opacity: 1;
+    }
+}

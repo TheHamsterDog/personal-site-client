@@ -1,0 +1,26 @@
+//abstracts
+
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+@import "./abstracts/typography";
+@import "./abstracts/animations";
+
+
+//utility
+
+@import "./utility/paddings";
+@import "./utility/margins";
+@import "./utility/basic";
+
+//components
+@import "./components/footer";
+@import "./components/about";
+@import "./components/background";
+@import "./components/contactform";
+@import "./components/home";
+@import "./components/icons";
+@import "./components/navbar";
+@import "./components/paragraphs";
+@import "./components/portfolio";
+@import "./components/sidebar";
+@import "./components/404";

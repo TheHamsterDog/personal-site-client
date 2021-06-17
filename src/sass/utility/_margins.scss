@@ -1,0 +1,43 @@
+.margin {
+    &-botton {
+        &-small {
+            margin-bottom: 2rem;
+        }
+
+        &-medium {
+            margin-bottom: 4rem;
+        }
+
+        &-large {
+            margin-bottom: 6rem;
+        }
+    }
+
+    &-top {
+        &-small {
+            margin-top: 2rem;
+        }
+
+        &-medium {
+            margin-top: 4rem;
+        }
+
+        &-large {
+            margin-top: 6rem;
+        }
+    }
+
+    &-general {
+        &-small {
+            margin: 2rem;
+        }
+
+        &-medium {
+            margin: 4rem;
+        }
+
+        &-large {
+            margin: 6rem;
+        }
+    }
+}
