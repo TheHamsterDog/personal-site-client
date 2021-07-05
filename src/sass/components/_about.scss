@@ -29,11 +29,16 @@
                 overflow: auto;
 
                 &-skill {
+                    //border-radius: 1rem;
+                    background-color: rgba(#109662, 0.6);
+
                     box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
                     padding: 2rem;
 
                     &-icon {
+                        //color: rgba(#fff, 1);
                         &-image {
+
                             text-align: left;
                             height: 5rem;
                         }

@@ -5,9 +5,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './index.css';
 const Home = lazy(() => import("./components/home"));
 const About = lazy(() => import("./components/about"));
-
 const Contact = lazy(() => import("./components/contact"));
-
 const NotFound = lazy(() => import("./components/notFound"));
 function App() {
   return (

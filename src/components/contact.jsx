@@ -33,8 +33,7 @@ const Contact = (props) => {
                 setState(state => ({ ...state, submitted: true }));
             }
             catch (err) {
-
-                console.log(err)
+                toast.error(err.response.data);
             }
 
         }
@@ -71,6 +70,7 @@ const Contact = (props) => {
                 <meta name="description" content="You can use this page to contact me" />
                 <meta property="og:title" content="Shreshth Verma: Contact-me" />
                 <meta property="og:description" content="You can use this page to contact me" />
+                <meta property="keywords" content="Shreshth, Verma, Contact, Me"/>
             </Helmet>
             <Navbar bs={"rgb(21,19,17)"} />
 
@@ -94,7 +94,7 @@ const Contact = (props) => {
                     My contact information
                 </div>
                 <div className="contact-description text2-1">
-                    My Email <a className="contact-description-button" href="mailto:shresth21oct@gmail.com">shresth21oct@gmail.com</a>
+                    My Email <a className="contact-description-button" href="mailto:personal@shreshthverma.me">Click to Reveal</a>
                 </div>
                 <div className="contact-form">
                     <div className="contact-form-header text1-3">
@@ -140,7 +140,7 @@ const Contact = (props) => {
                                 Message
                             </label>
                         </div>
-                        <button className="contact-form-form-button text2-2">Send Message <SendIcon style={{ fontSize: "inherit", float: "right", marginTop: ".4rem", marginLeft: ".5rem" }} /></button>
+                        <button disabled={state.submitted} className="contact-form-form-button text2-2">Send Message <SendIcon style={{ fontSize: "inherit", float: "right", marginTop: ".4rem", marginLeft: ".5rem" }} /></button>
                     </form>
                 </div>
                 <Footer />

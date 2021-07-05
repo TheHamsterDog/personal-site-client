@@ -386,6 +386,7 @@ body {
   overflow: auto;
 }
 .about-resume-section-content-skill {
+  background-color: rgba(16, 150, 98, 0.6);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
   padding: 2rem;
   width: 40%;
@@ -784,7 +785,7 @@ body {
 }
 @media (max-width: 56.25em) {
   .home-content-story-title {
-    margin-bottom: 6rem;
+    margin: 0 2.5rem 6rem 0;
   }
 }
 .home-content-container {
